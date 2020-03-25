@@ -1,0 +1,54 @@
+body {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/590be7fd15d5dbc6bf3e22d0/1494289044298-J7QBPEW233F6SR6HP2HX/ke17ZwdGBToddI8pDm48kLIHJMQ8C0Xv223jIdQPNVp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1US37MzVIBvWXggljItfsh6FARqcsDTeJPtzqIsgFInpeDz83YmSA7HB1mYBaOgQKFw/HIRES3-2c.jpg?format=2500w');
+    background-size: auto;
+}
+
+#newform {
+    text-align: center;
+}
+
+#header {
+    text-align: center;
+    color: whitesmoke;
+}
+
+#addrecipe {
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+div.card {
+    background-color: #eeeeee;
+    height: 250px;
+    width: 300px;
+    box-shadow: 10px 10px grey;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+  }
+
+  li {
+    font-size: 1.05em;
+    list-style: none;
+    padding-right: 20px;
+  }
+
+  @media only screen and (min-width: 500px) {
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (min-width: 850px) {
+    main {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
