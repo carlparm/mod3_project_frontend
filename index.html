@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="index.css">
   <head>
     <meta charset="utf-8">
-    <title>Recipes</title>
+    <title>Flatiron Recipes</title>
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
@@ -28,12 +28,30 @@
     </main>
 
 
-    <div id='show'>
-
-
-    </div>
-    
-
+    <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title" id=recipetitle></div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div id="recipechef"></div>
+            <div id="cooktime"></div>
+            <div id="recipefeeds"></div>
+            <div class=recipeheader>Ingredients:</div>
+                <ul id="recipeingredients"></ul>
+            <div class=recipeheader>Directions:</div>
+                <div id="recipedirections"></div>
+            <div class=recipeheader>Comments:</div>
+                <ul id="recipecomments"></ul>
+        </div>
+        <div>
+            <form class="commentform" id=commentform>
+                <input type="text" id="content" placeholder="Add Comment">
+                <input class="ui button" type="submit">
+            </form>
+        </div>
+      </div>
+      <div id="overlay"></div>
 
 
     <script src="./source/index.js"></script>
